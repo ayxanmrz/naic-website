@@ -35,7 +35,7 @@ const OurMissions = () => {
                 <span className="bg-brand-gradient z-20 bg-clip-text text-transparent relative">
                   Missiyamız
                 </span>
-                <div className="absolute top-1/2 z-10 left-1/2 transform -translate-1/2 size-40 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
+                <div className="absolute top-1/2 z-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-40 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
               </span>
             </h2>
 
@@ -72,7 +72,7 @@ const OurMissions = () => {
                 <span className="bg-brand-gradient z-20 bg-clip-text text-transparent relative">
                   Vizyonumuz
                 </span>
-                <div className="absolute top-1/2 z-10 left-1/2 transform -translate-1/2 size-40 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
+                <div className="absolute top-1/2 z-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-40 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
               </span>
             </h2>
 

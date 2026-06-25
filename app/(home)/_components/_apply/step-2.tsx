@@ -3,7 +3,7 @@ import { UseFormRegister, FieldErrors, UseFormSetValue } from "react-hook-form";
 import { FormData } from "./schema";
 import Input from "@/components/ui/Input";
 import { FileText, Mail, Phone, User } from "lucide-react";
-import formatAzerbaijanPhone from "@/app/features/formatPhoneNumber";
+import formatAzerbaijanPhone from "@/lib/formatPhoneNumber";
 import { useEffect } from "react";
 
 interface StepTwoProps {

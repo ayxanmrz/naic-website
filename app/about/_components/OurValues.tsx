@@ -6,18 +6,20 @@ import { Card } from "@/constants/cards";
 export default function OurValues() {
   return (
     <MaxWidthWrapper className="py-20 flex flex-col">
-      <h2 className="text-2xl md:text-5xl font-bold text-white mb-16 leading-tight ">
-        Bizim{" "}
-        <span className="relative inline-block mb-2">
-          <span className="bg-brand-gradient z-20 relative  bg-clip-text text-transparent">
-            Dəyərlərimiz
-          </span>
-          <div className="absolute z-10 top-1/2 left-1/2 transform -translate-1/2 size-60 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20 "></div>
-        </span>{" "}
-        <h3 className="text-[#A1A1AA] text-sm md:text-base z-20 leading-relaxed max-w-2xl font-light">
+      <div className="mb-16 relative z-20">
+        <h2 className="text-2xl md:text-5xl font-bold z-10 text-white  leading-tight ">
+          Bizim{" "}
+          <span className="relative inline-block mb-2">
+            <span className="bg-brand-gradient z-20 relative  bg-clip-text text-transparent">
+              Dəyərlərimiz
+            </span>
+            <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-60 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20 "></div>
+          </span>{" "}
+        </h2>
+        <h3 className="text-[#A1A1AA] text-sm md:text-base relative z-20 leading-relaxed max-w-2xl font-light">
           Bizi birləşdirən və hər zaman inkişafımıza dəstək olan dəyərlərimiz.
         </h3>
-      </h2>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {valuesCards.map((card: Card, index: number) => (

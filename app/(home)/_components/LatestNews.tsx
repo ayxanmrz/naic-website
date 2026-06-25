@@ -9,7 +9,6 @@ export default function LatestNews() {
     <div className="bg-[#141414] py-24">
       <MaxWidthWrapper className="flex flex-col ">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 relative isolate">
-          {/* Background ambient glow matching screenshot */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-96 bg-purple-500/20 rounded-full mix-blend-screen filter blur-[100px] -z-10"></div>
 
           <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white leading-[1.1] max-w-3xl">
@@ -33,7 +32,6 @@ export default function LatestNews() {
               href={item.link}
               className="group flex flex-col border border-white/20 hover:border-white/40 transition-colors rounded-[2rem] overflow-hidden bg-[#141414] relative"
             >
-              {/* Image Container */}
               <div className="relative h-64 w-full bg-[#111] overflow-hidden">
                 <Image
                   src={item.image}
@@ -42,13 +40,11 @@ export default function LatestNews() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0"
                 />
 
-                {/* Floating Arrow Icon inside image bounds */}
                 <div className="absolute top-4 right-4 bg-black/40 backdrop-blur-md p-3 rounded-2xl border border-white/10 text-white transition-transform group-hover:-translate-y-1 group-hover:translate-x-1">
                   <ArrowUpRight size={20} />
                 </div>
               </div>
 
-              {/* Text Content */}
               <div className="p-6 pb-8 flex-1 flex flex-col">
                 <h3 className="text-white font-bold text-[20px] mb-3 leading-snug">
                   {item.title}

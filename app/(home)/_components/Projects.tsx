@@ -9,7 +9,7 @@ function Projects() {
           Əsas{" "}
           <span className="bg-brand-gradient relative bg-clip-text text-transparent">
             layihələr
-            <div className="absolute top-1/2 left-1/2 transform -translate-1/2 size-40 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20 "></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-40 bg-pink-300 rounded-full mix-blend-screen filter blur-3xl opacity-20 "></div>
           </span>{" "}
         </h1>
         <p className="text-[#BFBFBF] text-[14px] leading-10 leading-relaxed lg:max-w-lg">
