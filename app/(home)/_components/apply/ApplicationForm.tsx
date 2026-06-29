@@ -22,7 +22,8 @@ export default function ApplicationForm() {
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(formDataSchema),
-    mode: "onChange",
+
+    mode: "onSubmit",
   });
 
   const stepFields: (keyof FormData)[][] = [
@@ -99,7 +100,10 @@ export default function ApplicationForm() {
             {currentStep < 1 ? (
               <button
                 type="button"
-                onClick={nextStep}
+                onClick={(e) => {
+                  e.preventDefault();
+                  nextStep();
+                }}
                 className="flex items-center gap-2 bg-brand-gradient text-black font-bold px-6 py-3 rounded-xl hover:opacity-90 transition-opacity whitespace-nowrap w-max"
               >
                 Növbəti <ArrowRight size={18} strokeWidth={2.5} />

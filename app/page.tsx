@@ -11,9 +11,7 @@ import Links from "./(home)/_components/Links";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black pt-10 overflow-hidden">
-      <MaxWidthWrapper className="max-w-400!">
-        <HomeHero />
-      </MaxWidthWrapper>
+      <HomeHero />
       <HomeStats />
       <AiLabSection />
       <WhoAreWe />
